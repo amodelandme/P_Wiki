@@ -67,6 +67,15 @@ Triggered by: *"ingest <file>"* or `/wiki-ingest`
 
 **Supported formats:** Markdown (`.md`) ingested directly. Non-markdown files (`.pdf`, `.docx`, `.pptx`, `.xlsx`, `.html`, `.txt`, `.csv`, `.json`, `.xml`, `.rst`, `.rtf`, `.epub`, `.ipynb`, `.yaml`, `.yml`, `.tsv`, `.wav`, `.mp3`) auto-converted to markdown via [markitdown](https://github.com/microsoft/markitdown) before ingestion. Use `--no-convert` to skip auto-conversion.
 
+**Finding un-ingested files:** When `/wiki-ingest` is invoked without a file argument, do NOT scan `raw/` files individually. Instead, diff `raw/` against the `source_file:` frontmatter of existing source pages:
+
+```bash
+comm -23 <(find raw -type f -not -path 'raw/.obsidian/*' -not -name '.gitkeep' | sort) \
+         <(grep -h '^source_file:' wiki/sources/*.md | sed 's/source_file: *//' | sort)
+```
+
+This is O(1) reads regardless of how many files are in `raw/`. Present the resulting list to the user and ask which to ingest. Files in `raw/` are immutable and stay there after ingestion — do not move or delete them.
+
 Steps (in order):
 1. Read the source document fully using the Read tool (auto-convert if non-markdown)
 2. Read `wiki/index.md` and `wiki/overview.md` for current wiki context

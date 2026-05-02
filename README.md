@@ -1,6 +1,6 @@
-# LLM Wiki Agent
+# P_Wiki
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+**Cloned from [SaumurAIGPT](https://github.com/SamurAIGPT/llm-wiki-agent)**
 
 **A coding agent skill.** Drop source documents into `raw/` and tell the agent to ingest them — it reads them, extracts knowledge, and builds a persistent interlinked wiki. Every new source makes the wiki richer. You never write it.
 
