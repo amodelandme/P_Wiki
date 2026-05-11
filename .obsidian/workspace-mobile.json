@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/I Was Burning Through Claude Code’s Weekly Limit in 3 Days. Here’s How I Fixed It..md",
+                "file": "raw/StrongDM Software Factory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "I Was Burning Through Claude Code’s Weekly Limit in 3 Days. Here’s How I Fixed It."
+              "title": "StrongDM Software Factory"
             }
           }
         ]
@@ -181,8 +181,10 @@
   },
   "active": "6be5b63cc826d734",
   "lastOpenFiles": [
-    "raw/11 Tips for Coding with Ralph Wiggum.md",
+    "raw/How StrongDM’s AI team build serious software without even looking at the code.md",
+    "raw/StrongDM Software Factory.md",
     "raw/I Was Burning Through Claude Code’s Weekly Limit in 3 Days. Here’s How I Fixed It..md",
+    "raw/11 Tips for Coding with Ralph Wiggum.md",
     "README.md",
     "raw/Ralph Loops using Bash.md",
     "raw/LSP Discussion with Claude..md",
