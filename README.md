@@ -1,4 +1,4 @@
-# P_Wiki
+# P_brain
 
 **Cloned from [SaumurAIGPT](https://github.com/SamurAIGPT/llm-wiki-agent)**
 
